@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Adventurer";
+  src: url("fonts/adventurer.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BetterPixels";
+  src: url("fonts/BetterPixels.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#word {
+  font-family: "Adventurer", sans-serif; /* Si la fuente falla, usará una fuente sans-serif como respaldo */
+}
+
+#clickCount {
+  font-family: "BetterPixels", sans-serif;
+  font-size: large;
+}
+
+p {
+  font-family: "BetterPixels", sans-serif;
+  font-size: large;
+}
+
+#randomButton {
+  font-family: "BetterPixels", sans-serif;
+  font-size: large;
+}
+
+#resetButton {
+  font-family: "BetterPixels", sans-serif;
+  font-size: large;
+}
+
+#downloadButton {
+  font-family: "BetterPixels", sans-serif;
+  font-size: large;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#randomWordDisplay {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#randomWordDisplay span {
+  margin-left: 10px;
+}
+
+#canvas {
+  display: grid;
+  grid-template-columns: repeat(16, 20px);
+  grid-template-rows: repeat(16, 20px);
+  gap: 1px;
+  margin-bottom: 20px;
+}
+
+.pixel {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#controls {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
